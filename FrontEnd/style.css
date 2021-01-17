@@ -1,0 +1,139 @@
+.kontejner{
+    display: flex;
+    border:  1px solid black;
+
+}
+.kontForma{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+
+}
+.kontUrediUkloni{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
+label{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.divMOBO{
+    margin-left: 30px;
+}
+.procName{
+    margin-left: 20px;
+}
+.kontRacunari{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+
+}
+
+.pc{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.glavniKontPC{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    display: grid;
+    grid:32% 18% 40% 10%/auto;
+
+}
+.divUredi{
+    display: grid;
+    grid:auto/50% 50%;
+    
+}
+.kontCPU{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kontRAM{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50px;
+    
+}
+.kontRAMSlot{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    word-wrap: break-word;
+}
+.kontGPU{
+    display: flex;
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kontNVME{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50px;
+}
+.kontNVMESlot{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kontSATA{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50px
+}
+.kontSATASlot{
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kontNapajanje{
+    display: flex;
+    border: 1px solid black;
+    flex: 1 1 10px;
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
