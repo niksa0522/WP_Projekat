@@ -13,12 +13,15 @@ namespace BackEnd.Models
         public int MotherboardID { get; set; }
 
         [Column("Ime_Maticne")]
+        [MaxLength(8)]
         public string maticna { get; set; }
 
         [Column("Procesor")]
+        [MaxLength(50)]
         public string cpu { get; set; }
 
         [Column("Graficka_Kartica")]
+        [MaxLength(50)]
         public string GPU { get; set; }
 
         [Column("Max_Ram")]

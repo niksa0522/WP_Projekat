@@ -13,10 +13,12 @@ namespace BackEnd.Models
         public int ID {get; set;}
 
         [Column("Naziv")]
+        [DataType("nvarchar")]
         [MaxLength(255)]
         public string Naziv {get;set;}
 
         [Column("Kapacitet")]
+        [MaxLength(1)]
         public int N { get; set; }
 
         public virtual List<PC> Racunari { get; set; }

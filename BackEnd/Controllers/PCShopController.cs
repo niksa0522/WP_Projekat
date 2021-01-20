@@ -23,13 +23,13 @@ namespace BackEnd.Controllers
         [HttpGet]
         public async Task<List<Warehouse>> PreuzmiWarehouses()
         {
-            return await Context.Warehouses.Include(p=>p.Racunari).ThenInclude(p=>p.motherboard).ThenInclude(p=>p.Memory).ToListAsync(); //problem1 ovo ne vraca maticne
+            return await Context.Warehouses.Include(p=>p.Racunari).ThenInclude(p=>p.motherboard).ThenInclude(p=>p.Memory).ToListAsync(); 
         }
         [Route("PreuzmiRacunare")]
         [HttpGet]
         public async Task<List<PC>> PreuzmiRacunare()
         {
-            return await Context.PCs.Include(p=>p.motherboard).ToListAsync(); //problem2 ovo ne vraca ram,sata i nvme
+            return await Context.PCs.Include(p=>p.motherboard).ToListAsync(); 
         }
         [Route("UpisiWarehouse")]
         [HttpPost]

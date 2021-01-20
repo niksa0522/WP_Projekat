@@ -15,18 +15,22 @@ namespace BackEnd.Models
         public int Poz { get; set; }
 
         [Column("Ime")]
+        [MaxLength(30)]
         public string Name { get; set; }
 
         [Column("Maticna_Ploca")]
         public Motherboard motherboard { get; set; }
 
         [Column("Kuciste")]
+        [MaxLength(100)]
         public string Kuciste { get; set; }
 
         [Column("Napajanje")]
+        [MaxLength(6)]
         public string PSU { get; set; }
 
         [Column("Cena")]
+        [MaxLength(6)]
         public string price{get;set;}
 
         [JsonIgnore]
