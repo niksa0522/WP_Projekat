@@ -286,7 +286,11 @@ export class Warehouse{
             const napajanje = this.kontejner.querySelector(".napajanje").value;
             const cena = this.kontejner.querySelector(".cena").value;
             const poz = parseInt(selPoz.value);
-            if(this.racunari[poz].name == "Prazno"){
+            if(napajanje == "" || cena=="" || ime=="")
+                alert("Postoji prazno polje");
+            else if(storageSize==0)
+                alert("Ne postoji hdd/ssd");
+            else if(this.racunari[poz].name == "Prazno"){
                 //this.racunari[poz].azurirajRacunar(poz,ime,maticna.value,cpu,ramKolicina,ramVelicina,graficka,storageSize,storageType,kuciste,napajanje,cena);//prebaci preveru na server
                 var arrayMemory = [];
                 for(let i=0;i<ramKolicina;i++){
@@ -536,9 +540,16 @@ export class Warehouse{
     }
 
     crtajRacunare(host){
+        const kontRacunariLabel = document.createElement("div");
+        kontRacunariLabel.className = "kontRacunariLabel";
         const kontRacunari = document.createElement("div");
         kontRacunari.className = "kontRacunari";
-        host.appendChild(kontRacunari);
+        host.appendChild(kontRacunariLabel);
+        var elLabela = document.createElement("h3");
+        elLabela.className="nazivWarehouse";
+        elLabela.innerHTML=this.naziv;
+        kontRacunariLabel.appendChild(elLabela);
+        kontRacunariLabel.appendChild(kontRacunari);
         let pc;
         for(let i=0;i<this.n;i++)
         {

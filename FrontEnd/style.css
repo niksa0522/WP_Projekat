@@ -30,6 +30,14 @@ label{
     flex-direction: row;
 
 }
+.kontRacunariLabel{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.nazivWarehouse{
+    align-self: center;
+}
 
 .pc{
     display: flex;
@@ -75,13 +83,14 @@ label{
 .kontRAMSlot{
     border: 1px solid black;
     flex: 1 1 10px;
-    margin: 5px;
+    margin: 2px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     font-size: small;
     word-wrap: break-word;
+    overflow:hidden;
 }
 .kontGPU{
     display: flex;
@@ -104,7 +113,7 @@ label{
 .kontNVMESlot{
     border: 1px solid black;
     flex: 1 1 10px;
-    margin: 5px;
+    margin: 2px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -122,7 +131,7 @@ label{
 .kontSATASlot{
     border: 1px solid black;
     flex: 1 1 10px;
-    margin: 5px;
+    margin: 2px;
     display: flex;
     text-align: center;
     align-items: center;

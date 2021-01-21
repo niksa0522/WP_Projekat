@@ -1,0 +1,3 @@
+Objekti warehouse inicijalno ne postoje, kreirao sam ih putem post metode UpisiWarehouse, gde sam samo uneo ime i velicinu. SQL komande bi bile
+insert into PC_Warehouse (Naziv,Kapacitet) VALUES ('Glavni Warehouse',4)
+insert into PC_Warehouse (Naziv,Kapacitet) VALUES ('Warehouse Veci',5)
